@@ -1,0 +1,17 @@
+{
+    "appenders": {
+        "log_date": {
+            "type":"dateFile",
+            "filename": "log/app/app",
+            "alwaysIncludePattern": true,    
+            "pattern": "-yyyy-MM-dd.log"
+        } 
+    },
+    "replaceConsole": true,
+    "categories": {
+        "default": {
+            "appenders": ["log_date"],
+            "level":"all"
+        }
+    }
+  }
